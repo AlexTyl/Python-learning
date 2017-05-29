@@ -11,6 +11,7 @@ def more_one_numeral(number):
         number = more_one_numeral(int(input()))
     return number
 
+
 def ascending_sequence_numerals(number):
     while number != 0:
         first_num = number % 10
