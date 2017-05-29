@@ -13,15 +13,11 @@ def numerals_revers(number):
 
 
 def check_palindrome(number):
-    if number == numerals_revers(number):
-        return True
-    return False
+    return number == numerals_revers(number)
 
 
 def palindrome_in_square_palindrome(number):
-    if check_palindrome(number) and check_palindrome(number*number):
-        return True
-    return False
+    return check_palindrome(number) and check_palindrome(number*number)
 
 
 number = int(input())

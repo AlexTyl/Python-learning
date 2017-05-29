@@ -5,7 +5,7 @@ print("Enter the number: ")
 
 
 def check_automorphic(number):
-    square_number = number * number
+    square_number = number ** 2
     while number != 0:
         if number % 10 != square_number % 10:
             return False
