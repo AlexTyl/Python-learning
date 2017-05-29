@@ -1,5 +1,6 @@
 # Получить все четырехзначные целые числа, в записи которых нет одинаковых цифр
 
+
 def identical_digits(number):
     while number != 0:
         current_number = number % 10
