@@ -1,6 +1,6 @@
 # Получить все четырехзначные целые числа, в записи которых нет одинаковых цифр
 
-def two_identical_digits(number):
+def identical_digits(number):
     while number != 0:
         current_number = number % 10
         check_number = number // 10
@@ -15,6 +15,6 @@ def two_identical_digits(number):
 number = 1000
 
 while number != 10000:
-    if not two_identical_digits(number):
+    if not identical_digits(number):
         print(str(number))
     number += 1
