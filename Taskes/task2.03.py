@@ -37,7 +37,6 @@ def swap_last_negative_and_first_positive(mass):
     buffer = mass[index_first_positive]
     mass[index_first_positive] = mass[index_last_negative]
     mass[index_last_negative] = buffer
-
     return mass
 
 mass = random_array(15, -10, 20)
