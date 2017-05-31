@@ -17,7 +17,7 @@ def check_palindrome(number):
 
 
 def palindrome_in_square_palindrome(number):
-    return check_palindrome(number) and check_palindrome(number*number)
+    return check_palindrome(number) and check_palindrome(number ** 2)
 
 
 number = int(input())
