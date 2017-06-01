@@ -21,7 +21,7 @@ def before_first_negative_number(mass):
 
 def index_of_last_negative_number(mass):
     current_index = len(mass) - 1
-    while current_index > 0:
+    while current_index >= 0:
         if mass[current_index] < 0:
             return current_index
         current_index -= 1
