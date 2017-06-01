@@ -30,7 +30,8 @@ def creating_polynomial(array, x):
     print("Polynomial derivative: " + derivative[3:len(derivative)])
     print("=====================================================")
     if len(values_individual_derivative) > 0:
-        creating_polynomial(values_individual_derivative, x)
+        return creating_polynomial(values_individual_derivative, x)
+    return 0
 
 print("Enter number of elements of a polynomial: ")
 number_of_elements = int(input())
