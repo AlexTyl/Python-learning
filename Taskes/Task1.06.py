@@ -2,6 +2,7 @@
 
 
 def check_valid_number(number):
+    number = abs(number)
     while number != 0:
         if number % 10 in [1, 4, 5, 6, 8, 9]:
             return False
@@ -10,11 +11,12 @@ def check_valid_number(number):
 
 #2037
 def check_valid_number_V2(number):
+    number = abs(number)
     while number != 0:
         flag = False;
         defualtNumber = 2037;
         while defualtNumber != 0:
-            if(number%10 == defualtNumber % 10):
+            if(number % 10 == defualtNumber % 10):
                 flag = True;
             defualtNumber //= 10;
         if(not flag):
